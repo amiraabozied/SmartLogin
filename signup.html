@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sign up</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/signuP.css">
+
+</head>
+<body>
+ 
+ 
+  
+      <div class="container my-5 text-center">
+          <div class="login-form m-auto w-75 p-5">
+              <h2> Smart Login System</h2>
+              
+              <input type="text" oninput="validation('username',/^[a-zA-Z]{3,15}/)" id="username" placeholder="Enter your name" required class="form-control my-3">
+                    
+                      <input type="text" oninput="validation('email',/^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/)" id="email" placeholder="Enter your emil" required class="form-control my-3">
+                    
+                      <input oninput="validation('password',/^[A-Za-z\d]{8,}$/
+                      ) " type="password" id="password" placeholder="Enter your password" required class="form-control my-3">
+                      
+                  
+                  <button class="btn btn-outline-info w-100 my-3" id="btnup"> sign up</button>
+                   <p class="text-danger d-none" id="warn">
+                    All inputs is required
+                   </p>
+                   <p id="emailError" class="text-danger"></p>
+
+                  <p class="text-white pt-4">
+                    Don’t have an account?
+                    <a  class="text-white"  href="index.html"> Sign in</a>
+                  </p>
+              
+          </div>
+      </div>
+   
+  
+
+
+ <script src="js/signup.js"></script>
+</body>
+</html>
